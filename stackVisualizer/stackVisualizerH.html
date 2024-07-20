@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../bootstrapp/css/bootstrap.min.css">
+    <!-- <link rel = "stylesheet" href = "bootstrap_pro_1_css.css"> -->
+    <link rel = "stylesheet" href = "stackVisualizerC.css">
+    <title>Stack Visualizer</title>
+</head>
+<body>
+    <div class = "container" style = "margin-top: 0px;">
+        <h1 class = "jumbotron">Stack Visualizer</h1>
+    </div>
+    <div class = "container ">
+        <div class = "row">
+            <div class = "col-sm-3 space text-center">
+                <button id = "enterElement" type = "button" class = "btn btn-outline-primary">Push Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "popElement" type = "button" class = "btn btn-outline-success">Pop Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "peekElement" type = "button" class = "btn btn-outline-danger">Peek Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "printStackButton" type = "button" class = "btn btn-outline-info">Print Stack</button>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "enterElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center">
+                    <h3>Enter the element to Push in Stack</h3>
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <input id = "enterElementInput" type = "number">
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <button id = "enterData" class = "btn btn-primary">Enter Data</button>
+                </div>    
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "successMessage" class = "container"></h3>
+                </div>            
+                
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "popElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "popElementResult" class = "container"></h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "peekElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "peekElementResult" class = "container"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "printStackDiv">
+            <div class = "row" style = "border-left: 1px white solid;border-bottom: 1px white solid;border-top: 1px white solid;">
+                <div class = "col-sm-12" style = "font-size: 30px;">
+                    <span id = "printArray" ></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12 text-center">
+                <a href = "../index.html" class = "btn btn-warning">Main Menu</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src = "stackVisualizerJ.js"></script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "../bootstrapp/js/jquery-3.5.1.js"></script>
+    <script src = "../bootstrapp/js/bootstrap.min.js"></script>
+</body>
+</html>

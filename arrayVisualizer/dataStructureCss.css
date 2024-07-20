@@ -1,0 +1,23 @@
+body{
+    font-family:'Open Sans', sans-serif;
+    background:#151837;
+    color: #fefefe;
+}
+.container{
+    margin-top : 50px;
+}
+.jumbotron{
+    background-color: rgb(198, 152, 240);
+    color: floralwhite;
+    text-align: center;
+}
+.space{
+    margin-top: 20px;
+}
+.col-sm-3{
+    border: 1px solid white;
+}
+.btn{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

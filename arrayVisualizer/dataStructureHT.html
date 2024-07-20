@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../bootstrapp/css/bootstrap.min.css">
+    <!-- <link rel = "stylesheet" href = "bootstrap_pro_1_css.css"> -->
+    <link rel = "stylesheet" href = "dataStructureCss.css">
+    <title>Data Structure</title>
+</head>
+<body>
+    <div class = "container" style = "margin-top: 0px;">
+        <h1 class = "jumbotron">Array Visualizer</h1>
+    </div>
+    <div class = "container ">
+        <div class = "row">
+            <div class = "col-sm-3 space text-center">
+                <button id = "enterElement" type = "button" class = "btn btn-outline-primary">Enter Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "getElement" type = "button" class = "btn btn-outline-success">Get Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "deleteElement" type = "button" class = "btn btn-outline-danger">Delete Element</button>
+            </div>
+            <div class = "col-sm-3 space text-center">
+                <button id = "printArrayButton" type = "button" class = "btn btn-outline-info">Print Array</button>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "enterElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center">
+                    <h3>Enter the element to add in Array</h3>
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <input id = "enterElementInput" type = "number">
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <button id = "enterData" class = "btn btn-primary">Enter Data</button>
+                </div>    
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "successMessage" class = "container"></h3>
+                </div>            
+                
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "getElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center">
+                    <h3>Get Element at entered index</h3>
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <input id = "indexOfElement" type = "number">
+                </div>
+                <div class = "col-sm-12 space text-center">
+                    <button id = "getElementButton" class = "btn btn-primary">Get Element</button>
+                </div> 
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "valueAtGivenIndex" class = "container"></h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "deleteElementDiv">
+            <div class = "row">
+                <div class = "col-sm-12 text-center ">
+                    <h3>Enter the Element that you want to delete</h3>
+                </div>
+                <div class = "col-sm-12 text-center space">
+                    <input type = "number" id = "deleteNumberInput">
+                </div>
+                <div class = "col-sm-12 text-center space">
+                    <button id = "deleteElementButton" type = "button" class = "btn btn-primary">Delete Element</button>
+                </div>
+                <div class = "col-sm-12 text-center">
+                    <h3 id = "deleteResultShown" class = "container"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div style = "display: none;" id = "printArrayDiv">
+            <div class = "row">
+                <div class = "col-sm-12  text-center" style = "font-size: 30px;">
+                    <span>[ </span>
+                    <span id = "printArray" ></span>
+                    <span> ]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12 text-center">
+                <a href = "../index.html" class = "btn btn-warning">Main Menu</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src = "dataStructure.js"></script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "../bootstrapp/js/jquery-3.5.1.js"></script>
+    <script src = "../bootstrapp/js/bootstrap.min.js"></script>
+</body>
+</html>
